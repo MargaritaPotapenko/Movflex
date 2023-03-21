@@ -1,0 +1,126 @@
+.page-footer {
+  background: url("../../dist/img/footer.webp");
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 0 0;
+}
+
+.page-footer .footer-top {
+  padding: 2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.page-footer .footer-top :after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(18, 21, 30);
+  box-shadow: 0px 3px 0px 0px rgba(143, 143, 143, 0.14);
+}
+
+.page-footer .footer-bottom {
+  margin-top: 2rem;
+}
+
+.page-footer .footer-bottom .quick-link-list ul,
+.page-footer .footer-bottom .footer-social ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.page-footer .footer-bottom .quick-link-list ul li {
+  margin: 0 0.8rem;
+}
+
+.page-footer .footer-bottom .quick-link-list ul li a {
+  color: #bcbcbc;
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.page-footer .footer-bottom .quick-link-list ul li,
+.page-footer .footer-bottom .footer-social ul {
+  justify-content: flex-end;
+}
+
+.page-footer .footer-bottom .footer-social ul li {
+  margin-right: 8px;
+}
+
+.page-footer .footer-bottom .footer-social ul li :last-child {
+  margin-right: 0;
+}
+
+.page-footer .footer-bottom .footer-social ul li,
+.page-footer .footer-bottom .footer-social ul li a {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgb(18, 21, 30);
+  text-align: center;
+  line-height: 36px;
+  font-size: 0.9rem;
+  color: #bcbcbc;
+}
+
+.page-footer .footer-bottom .footer-social ul li a:hover {
+  color: #e3d804;
+}
+
+.page-footer .footer-bottom .footer-quick-link-wrap {
+  padding-top: 40px;
+}
+
+.page-footer .copyright {
+  background-color: #171b22;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+}
+
+.page-footer .copyright .para {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #fff;
+}
+
+.page-footer .copyright .link {
+  color: #e3d804;
+}
+
+@media (max-width: 700px) {
+  .footer-bottom .row > div {
+    width: 100%;
+  }
+
+  .footer-bottom .quick-link-list ul,
+  .footer-bottom .footer-social ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-bottom .footer-social ul {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-link-list ul {
+    justify-content: center;
+  }
+
+  .quick-link-list ul li {
+    min-width: 100%;
+    margin: 0 0 0.5rem;
+    text-align: center;
+  }
+}
